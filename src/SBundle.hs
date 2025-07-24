@@ -2,7 +2,7 @@
 module SBundle where
 
 
-import SInt
+-- import SInt
 import SBundleInt
 
 

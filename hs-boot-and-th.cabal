@@ -1,4 +1,4 @@
-cabal-version:      3.0
+cabal-version:      2.2
 name:               hs-boot-and-th
 version:            0.1.0.0
 -- synopsis:
@@ -28,4 +28,40 @@ library
     -- other-extensions:
     build-depends:    base ^>=4.18.3.0, bytestring, containers, template-haskell, th-abstraction, lens
     hs-source-dirs:   src
-    default-language: GHC2021
+    default-language: Haskell2010
+    default-extensions: BangPatterns
+                        BinaryLiterals
+                        DataKinds
+                        DefaultSignatures
+                        DeriveDataTypeable
+                        DeriveFoldable
+                        DeriveFunctor
+                        DeriveGeneric
+                        DeriveLift
+                        DeriveTraversable
+                        DerivingStrategies
+                        InstanceSigs
+                        KindSignatures
+                        MagicHash
+                        NoStarIsType
+                        PostfixOperators
+                        ScopedTypeVariables
+                        StandaloneDeriving
+                        TupleSections
+                        TypeApplications
+                        TypeOperators
+                        ViewPatterns
+    other-extensions:   CPP
+                        ConstraintKinds
+                        FlexibleContexts
+                        FlexibleInstances
+                        GADTs
+                        GeneralizedNewtypeDeriving
+                        MultiParamTypeClasses
+                        PatternSynonyms
+                        RankNTypes
+                        TemplateHaskell
+                        TypeFamilies
+                        UndecidableInstances
+    ghc-options:        -Wall -Wcompat -fexpose-all-unfoldings -fno-worker-wrapper
+    CPP-Options:        -DCABAL

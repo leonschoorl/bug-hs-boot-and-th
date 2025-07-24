@@ -1,3 +1,3 @@
 module STrace where
 
-import SInt
+import SInt ()
