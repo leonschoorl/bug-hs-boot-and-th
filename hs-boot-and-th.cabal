@@ -7,7 +7,6 @@ build-type:         Simple
 library
     ghc-options: -Wall
     exposed-modules:
-      ExS
       SBundle
       SBundleInt
       STrace
