@@ -1,9 +1,8 @@
 {-# LANGUAGE TemplateHaskellQuotes #-}
-module SBundleInt where
+module ModC where
 
-import           Language.Haskell.TH
-
-import SInt
+import Language.Haskell.TH
+import ModD
 
 
 someThThingy :: DecsQ

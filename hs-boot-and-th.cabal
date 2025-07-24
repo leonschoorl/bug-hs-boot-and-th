@@ -7,9 +7,9 @@ build-type:         Simple
 library
     ghc-options: -Wall
     exposed-modules:
-      SBundle
-      SBundleInt
-      STrace
-      SInt
+      ModA
+      ModB
+      ModC
+      ModD
     build-depends:    base, template-haskell
     hs-source-dirs:   src
