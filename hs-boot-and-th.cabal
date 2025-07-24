@@ -1,67 +1,17 @@
 cabal-version:      2.2
 name:               hs-boot-and-th
 version:            0.1.0.0
--- synopsis:
--- description:
 license:            BSD-3-Clause
-license-file:       LICENSE
-author:             Leon Schoorl
-maintainer:         leon@qbaylogic.com
--- copyright:
 build-type:         Simple
-extra-doc-files:    CHANGELOG.md
--- extra-source-files:
-
-common warnings
-    ghc-options: -Wall
 
 library
-    import:           warnings
+    ghc-options: -Wall
     exposed-modules:
       S
       ExS
       SBundle
-      SInt
-      STrace
       SBundleInt
-    -- other-modules:
-    -- other-extensions:
-    build-depends:    base ^>=4.18.3.0, bytestring, containers, template-haskell, th-abstraction, lens
+      STrace
+      SInt
+    build-depends:    base, template-haskell
     hs-source-dirs:   src
-    default-language: Haskell2010
-    default-extensions: BangPatterns
-                        BinaryLiterals
-                        DataKinds
-                        DefaultSignatures
-                        DeriveDataTypeable
-                        DeriveFoldable
-                        DeriveFunctor
-                        DeriveGeneric
-                        DeriveLift
-                        DeriveTraversable
-                        DerivingStrategies
-                        InstanceSigs
-                        KindSignatures
-                        MagicHash
-                        NoStarIsType
-                        PostfixOperators
-                        ScopedTypeVariables
-                        StandaloneDeriving
-                        TupleSections
-                        TypeApplications
-                        TypeOperators
-                        ViewPatterns
-    other-extensions:   CPP
-                        ConstraintKinds
-                        FlexibleContexts
-                        FlexibleInstances
-                        GADTs
-                        GeneralizedNewtypeDeriving
-                        MultiParamTypeClasses
-                        PatternSynonyms
-                        RankNTypes
-                        TemplateHaskell
-                        TypeFamilies
-                        UndecidableInstances
-    ghc-options:        -Wall -Wcompat -fexpose-all-unfoldings -fno-worker-wrapper
-    CPP-Options:        -DCABAL
