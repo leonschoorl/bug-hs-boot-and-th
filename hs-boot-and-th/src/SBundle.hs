@@ -6,6 +6,6 @@ module SBundle where
 import SBundleInt
 
 
-a = 2
+-- a = 2
 
 someThThingy
