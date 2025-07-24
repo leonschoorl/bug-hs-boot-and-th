@@ -1,3 +1,3 @@
 module ModD where
 
-import {-# SOURCE #-} ModA
+import {-# SOURCE #-} ModZ
