@@ -1,0 +1,9 @@
+Get dep graph
+
+cd src
+ghci -package ghc
+
+
+import qualified GHC
+f modName = fmap (:[]) (GHC.guessTarget modName Nothing Nothing) >>= GHC.setTargets >> GHC.depanal [] False
+graph <-  GHC.runGhc (Just "/nix/store/05cpciardnxxsqpd883iwb9aixlsabp2-ghc-9.6.7/lib/ghc-9.6.7/lib") (f "ModZ")
