@@ -11,5 +11,5 @@ library
       ModB
       ModC
       ModD
-    build-depends:    base, template-haskell
+    build-depends:    base
     hs-source-dirs:   src
